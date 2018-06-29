@@ -1,0 +1,13 @@
+/*
+!.gitignore
+!simple_cpu_basys3.tcl
+
+!simple_cpu_basys3.v
+!simple_cpu.v
+
+!simple_cpu_tb.v
+
+!tb_test_ROM.data
+!tb_test_ROM_asm.txt
+
+!Basys-3-Master.xdc
