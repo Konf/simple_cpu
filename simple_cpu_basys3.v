@@ -45,7 +45,7 @@ module simple_cpu_basys3 (
   hex_driver hex
  (.clk     (clk),
   .rst     (rst),
-  .data_in (program_counter),
+  .data_in ({8'h00, program_counter}),
   .seg     (seg),
   .an      (an)
   );
