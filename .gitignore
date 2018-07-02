@@ -10,4 +10,6 @@
 !tb_test_ROM.data
 !tb_test_ROM_asm.txt
 
+!asm_to_machine.py
+
 !Basys-3-Master.xdc
