@@ -12,13 +12,14 @@ module simple_cpu
 ( input clk,
   input rst,  
   input  [DATA_WIDTH-1:0] io_in,
-  output reg [DATA_WIDTH-1:0] io_out
+  output reg [DATA_WIDTH-1:0] io_out,
+  output reg [PC_WIDTH-1:0] program_counter
   );
 
 
 
   reg [DATA_WIDTH-1:0] regfile [0:REGFILE_DEPTH-1];
-  reg [PC_WIDTH-1:0]  program_counter;
+  //reg [PC_WIDTH-1:0]  program_counter;
   reg [DATA_WIDTH-1:0] accumulator;
 
 
@@ -53,7 +54,7 @@ module simple_cpu
   // Logical
   localparam NOT = 8;  // Logical NOT of accumulator
   localparam OR  = 9;  // Logical OR of accumulator and memory at argument addr
-  localparam XOR = 10;
+  localparam XOR = 10; // Logical XOR of accumulator and memory at argument addr
   localparam AND = 11;  // Logical AND of accumulator and memory at argument addr
   localparam LSH = 12;  // Left shift accumulator
   localparam RSH = 13; // Right shift accumulator

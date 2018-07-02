@@ -32,6 +32,7 @@
 #    "tb_test_ROM.data"
 #    "Basys-3-Master.xdc"
 #    "simple_cpu_tb.v"
+#    "hex_output.v"
 #
 #*****************************************************************************************
 
@@ -119,6 +120,7 @@ set obj [get_filesets sources_1]
 set files [list \
  "[file normalize "$origin_dir/simple_cpu.v"]"\
  "[file normalize "$origin_dir/simple_cpu_basys3.v"]"\
+ "[file normalize "$origin_dir/hex_output.v"]"\
  "[file normalize "$origin_dir/tb_test_ROM.data"]"\
 ]
 add_files -norecurse -fileset $obj $files
